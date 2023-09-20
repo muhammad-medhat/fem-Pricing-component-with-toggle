@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Pricing component with toggle</title>
 
-  Our Pricing
-  Annually
-  Monthly
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="d-flex flex-dir-col align-center justify-center">
+      <header class="d-flex flex-dir-col align-center text-color">
+        <h1>Our Pricing</h1>
+        <div class="toggle d-flex justify-space-between">
+          <div class="name">Annually</div>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="label d-flex1 align-center1">
+            <div class="ball"></div>
+          </label>
+          <div class="name">Monthly</div>
+        </div>
+      </header>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+      <section class="d-flex flex-dir-row">
+        <div class="plan text-color">
+          <div class="title">Basic</div>
+          <div class="price monthly">&dollar;19.99</div>
+          <div class="price annually">&dollar;199.99</div>
+          <div class="desc border-bottom border-top"><p>500 GB Storage</p></div>
+          <div class="desc border-bottom"><p>2 Users Allowed</p></div>
+          <div class="desc border-bottom"><p>Send up to 3 GB</p></div>
+          <button role="radio" class="text-color desc">Learn More</button>
+        </div>
+        <div class="plan text-color featured">
+          <div class="title">Professional</div>
+          <div class="price monthly">&dollar;24.99</div>
+          <div class="price annually">&dollar;249.99</div>
+          <div class="desc border-bottom border-top"><p>1 TB Storage</p></div>
+          <div class="desc border-bottom"><p>5 Users Allowed</p></div>
+          <div class="desc border-bottom"><p>Send up to 10 GB</p></div>
+          <button role="radio" class="text-color desc">Learn More</button>
+        </div>
+        <div class="plan text-color">
+          <div class="title">Master</div>
+          <div class="price monthly">&dollar;39.99</div>
+          <div class="price annually">&dollar;399.99</div>
+          <div class="desc border-bottom border-top"><p>2 TB Storage</p></div>
+          <div class="desc border-bottom"><p>10 Users Allowed Send</p></div>
+          <div class="desc border-bottom"><p>up to 20 GB</p></div>
+          <button role="radio" class="text-color desc">Learn More</button>
+        </div>
+      </section>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
+    </main>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
