@@ -30,7 +30,7 @@ header {
 }
 .plan {
   min-height: 40vh;
-  min-width: 40vh;
+  min-width: 30%;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -156,4 +156,22 @@ label:hover,
 }
 .hide {
   display: none;
+}
+
+@media (max-width: 376px) {
+  section {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  /* CSS rules for screens up to 768px wide */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* CSS rules for screens between 769px and 1024px wide */
+}
+
+@media (min-width: 1025px) {
+  /* CSS rules for screens larger than 1025px wide */
 }
