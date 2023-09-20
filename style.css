@@ -84,10 +84,10 @@ button {
   border-radius: 50px;
   margin: 0 10px;
   width: 50px;
-  height: 25px;
+  height: 27px;
   cursor: pointer;
   padding: 11px;
-  background-color: var(--lightgrayishblue);
+  background: linear-gradient(90deg, var(--Gradient));
 }
 .name {
   font-size: 18px;
@@ -116,6 +116,9 @@ label:hover,
   transform: translateX(24px);
 }
 .toggle .checkbox {
+  display: none;
+}
+.price.monthly {
   display: none;
 }
 /*****************************************/
